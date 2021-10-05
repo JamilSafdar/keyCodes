@@ -1,0 +1,89 @@
+@import url('https://fonts.googleapis.com/css?family=B612+Mono');
+* {
+    box-sizing: border-box;
+}
+
+html, body {
+    font-family: "B612 Mono", monospace;
+    text-align: center;
+}
+
+h2 {
+    font-size: 200px;
+}
+
+#landing-page {
+   position: absolute;
+   top: 50%;
+   left: 50%;
+   transform: translate(-50%, -50%)
+}
+
+#generator {
+    margin-top: 70px;
+}
+
+#wrapper {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: fixed;
+    bottom: 0;
+    margin-bottom: 70px;
+}
+
+.box {
+    border: solid 2px rgb(235, 150, 23);
+    background: rgb(240, 218, 19);
+    color: rgb(15, 15, 15);
+    width: 20%;
+    margin: 10px;
+    text-align: center;
+    vertical-align: text-top;
+}
+
+.show {
+    display:none;
+}
+
+.footer {
+    font-family: "B612 Mono", monospace;
+    color: orange;
+    display: block;
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+}
+
+@media all and (max-width: 1000px) {
+    #wrapper {
+      flex-wrap: wrap;
+      flex-basis: 50%;
+    }
+    .box {
+        flex-wrap: wrap;
+        flex-basis: 25%;
+      }
+  }
+  
+  @media all and (max-width: 500px) {
+    #wrapper {
+        flex-wrap: wrap;
+      flex-basis: 100%;
+    }
+    .box {
+        flex-wrap: wrap;
+        flex-basis: 20%;
+      }
+  }
+    @media all and (max-width: 320px) {
+    #wrapper {
+        flex-wrap: wrap;
+        flex-basis: 100%;
+      }
+      .box {
+        flex-wrap: wrap;
+        flex-basis: 15%;
+      }
+  }

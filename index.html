@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Keycode Generator</title>
+  </head>
+
+  <body id="page-wrapper" onkeydown="keycode(event)">
+    <div id="landing-page">
+      <h1>Press any key to get the</h1>
+      <img src="images/js.png" alt="">
+      <h1>event keycode</h1>
+    </div>
+
+    <div id="generator" class="show">
+      <h1>Keycode Generator</h1>
+
+      <h2 id="keycode"></h2>
+      <div id="wrapper">
+        <div class="box">
+          <p>event.key</p>
+          <h3 id="eventKey"></h3>
+        </div>
+
+        <div class="box">
+          <p>event.code</p>
+          <h3 id="eventCode"></h3>
+        </div>
+
+        <div class="box">
+          <p>event.which</p>
+          <h3 id="eventWhich"></h3>
+        </div>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+    <footer>
+        <span class="footer">Made with JS by JS</span>
+    </footer>
+  </body>
+</html>
